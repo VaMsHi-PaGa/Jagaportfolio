@@ -82,8 +82,8 @@ netlify deploy --prod     # production
 
 ## Customize
 
-- **Résumé:** replace `assets/resume.pdf` with your real PDF (keep the same path so the
-  "Download Résumé" buttons keep working).
+- **Résumé:** update `assets/resume.docx` with your résumé file (keep the same path and name so the
+  "Download Résumé" buttons keep working). Or upload a PDF and update the link to `resume.pdf` in the HTML).
 - **Projects:** edit the three placeholder cards in `index.html` under
   `<!-- TODO: PROJECTS ... -->` (title, stack tags, blurb, repo/live links).
 - **GitHub link:** update the GitHub `href` in the Contact section (marked with a `TODO`).
