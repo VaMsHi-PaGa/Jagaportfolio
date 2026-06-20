@@ -1,0 +1,32 @@
+# Netlify configuration for a static, no-build site.
+# The site is plain HTML/CSS/JS — nothing to compile.
+
+[build]
+  # No build step required; publish the repository root as-is.
+  publish = "."
+  command = ""
+
+# Security & caching headers (helps Lighthouse "Best Practices").
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "geolocation=(), microphone=(), camera=()"
+
+# Cache static assets aggressively (filenames are stable).
+[[headers]]
+  for = "/css/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+[[headers]]
+  for = "/js/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"

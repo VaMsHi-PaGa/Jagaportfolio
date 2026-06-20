@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jagapathi Babu Allam — Senior Platform Engineer</title>
+  <meta name="description" content="Jagapathi Babu Allam — Senior Platform Engineer specializing in AWS, DevSecOps, CI/CD automation, Infrastructure as Code, and observability. 6+ years building secure, scalable cloud platforms." />
+  <meta name="author" content="Jagapathi Babu Allam" />
+  <meta name="theme-color" content="#0a0e14" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Jagapathi Babu Allam — Senior Platform Engineer" />
+  <meta property="og:description" content="Senior Platform Engineer | DevSecOps | AWS Cloud Engineer. 6+ years in cloud platforms, CI/CD automation, and observability." />
+  <meta property="og:locale" content="en_US" />
+  <meta name="twitter:card" content="summary" />
+
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <!-- Set theme before first paint to avoid flash of incorrect theme -->
+  <script>
+    (function () {
+      try {
+        var stored = localStorage.getItem('theme');
+        var prefersLight = window.matchMedia('(prefers-color-scheme: light)').matches;
+        var theme = stored || (prefersLight ? 'light' : 'dark');
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) { /* keep default dark */ }
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ===================== NAV ===================== -->
+  <header class="nav" id="top">
+    <div class="nav__inner">
+      <a class="nav__brand" href="#top" aria-label="Home">
+        <span class="nav__prompt">~/</span><span class="nav__brand-name">jagapathi</span><span class="nav__cursor" aria-hidden="true"></span>
+      </a>
+
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#about" data-nav>about</a>
+        <a href="#skills" data-nav>skills</a>
+        <a href="#experience" data-nav>experience</a>
+        <a href="#certifications" data-nav>certs</a>
+        <a href="#projects" data-nav>projects</a>
+        <a href="#contact" data-nav>contact</a>
+      </nav>
+
+      <div class="nav__actions">
+        <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle color theme" aria-pressed="false">
+          <svg class="theme-toggle__icon theme-toggle__icon--sun" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path>
+          </svg>
+          <svg class="theme-toggle__icon theme-toggle__icon--moon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <button id="nav-toggle" class="nav__hamburger" type="button" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <nav id="mobile-menu" class="nav__mobile" aria-label="Mobile" hidden>
+      <a href="#about" data-nav>about</a>
+      <a href="#skills" data-nav>skills</a>
+      <a href="#experience" data-nav>experience</a>
+      <a href="#certifications" data-nav>certs</a>
+      <a href="#projects" data-nav>projects</a>
+      <a href="#contact" data-nav>contact</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="hero" aria-labelledby="hero-title">
+      <div class="container hero__grid">
+        <div class="hero__intro reveal">
+          <p class="hero__eyebrow"><span class="status-dot" aria-hidden="true"></span> Available — 2 months' notice · Remote / Hybrid / On-site</p>
+          <h1 class="hero__title" id="hero-title">Jagapathi Babu Allam</h1>
+          <p class="hero__role">Senior Platform Engineer <span class="sep">/</span> DevSecOps <span class="sep">/</span> AWS Cloud Engineer</p>
+          <p class="hero__pitch">I build secure, automated cloud platforms — CI/CD pipelines, Infrastructure as Code, and end-to-end observability that let teams ship faster with confidence.</p>
+
+          <div class="hero__cta">
+            <a class="btn btn--primary" href="#experience">View Experience</a>
+            <a class="btn btn--ghost" href="assets/resume.pdf" download>Download Résumé</a>
+            <a class="btn btn--ghost" href="#contact">Contact</a>
+          </div>
+
+          <ul class="hero__meta">
+            <li><span class="hero__meta-key">location</span> Bangalore, India</li>
+            <li><span class="hero__meta-key">experience</span> 6+ years</li>
+            <li><span class="hero__meta-key">focus</span> AWS · DevSecOps · SRE</li>
+          </ul>
+        </div>
+
+        <!-- Terminal window -->
+        <div class="terminal reveal" role="img" aria-label="Terminal window running the whoami command, which prints: Senior Platform Engineer, DevSecOps, AWS Cloud Engineer.">
+          <div class="terminal__bar">
+            <span class="terminal__dot terminal__dot--red" aria-hidden="true"></span>
+            <span class="terminal__dot terminal__dot--amber" aria-hidden="true"></span>
+            <span class="terminal__dot terminal__dot--green" aria-hidden="true"></span>
+            <span class="terminal__title">jagapathi@platform: ~</span>
+          </div>
+          <div class="terminal__body" aria-hidden="true">
+            <p class="terminal__line">
+              <span class="terminal__user">jagapathi@platform</span><span class="terminal__path">:~$</span>
+              <span class="terminal__typed" id="typed"></span><span class="terminal__caret" id="caret"></span>
+            </p>
+            <div class="terminal__output" id="terminal-output"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__index">01</span>
+          <h2 class="section__title" id="about-title">$ cat about.md</h2>
+        </div>
+        <div class="about reveal">
+          <p class="about__lead">
+            Senior Platform Engineer with <strong>6+ years</strong> of experience across AWS cloud platforms,
+            CI/CD automation, and DevSecOps practices.
+          </p>
+          <p>
+            I design and implement GitLab CI/CD and Jenkins pipelines, Infrastructure as Code with
+            Terraform/OpenTofu, and secure software delivery through SAST, secret detection, and SonarQube
+            quality gates. My observability work spans OpenTelemetry, Grafana, Prometheus, Loki, and CloudWatch.
+          </p>
+          <p>
+            I support and troubleshoot distributed applications built on Java, Node.js, JavaScript, TypeScript,
+            React, and .NET, with exposure to Kafka and MongoDB. Day to day I lead P1–P3 incident management,
+            mentor teams, and drive platform improvements through automation and AI-assisted engineering.
+          </p>
+          <dl class="about__facts">
+            <div><dt>Title</dt><dd>Senior Platform Engineer · DevSecOps · AWS</dd></div>
+            <div><dt>Location</dt><dd>Bangalore, India</dd></div>
+            <div><dt>Availability</dt><dd>2 months' notice</dd></div>
+            <div><dt>Open to</dt><dd>Remote / Hybrid / On-site</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SKILLS ===================== -->
+    <section class="section section--alt" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__index">02</span>
+          <h2 class="section__title" id="skills-title">$ kubectl get skills</h2>
+        </div>
+
+        <!-- kubectl-style table header (decorative scannable summary) -->
+        <div class="kubectl reveal" aria-hidden="true">
+          <span>NAME</span><span>CATEGORY</span><span>STATUS</span><span>DEPTH</span>
+        </div>
+
+        <div class="skills-grid">
+          <article class="skill-card reveal">
+            <header class="skill-card__head"><h3>Cloud — AWS</h3><span class="badge badge--green">Ready</span></header>
+            <ul class="tags">
+              <li>ECS Fargate</li><li>Lambda</li><li>EC2</li><li>S3</li><li>CloudFront</li><li>IAM</li><li>VPC</li><li>Route 53</li><li>CloudWatch</li><li>SSM</li><li>Secrets Manager</li>
+            </ul>
+          </article>
+
+          <article class="skill-card reveal">
+            <header class="skill-card__head"><h3>IaC &amp; Automation</h3><span class="badge badge--green">Ready</span></header>
+            <ul class="tags">
+              <li>Terraform</li><li>OpenTofu</li><li>Ansible</li><li>PowerShell</li><li>Python</li><li>Bash</li><li>Vagrant</li>
+            </ul>
+          </article>
+
+          <article class="skill-card reveal">
+            <header class="skill-card__head"><h3>Containers &amp; Orchestration</h3><span class="badge badge--green">Ready</span></header>
+            <ul class="tags">
+              <li>Docker</li><li>Kubernetes</li><li>Amazon EKS</li>
+            </ul>
+          </article>
+
+          <article class="skill-card reveal">
+            <header class="skill-card__head"><h3>CI/CD &amp; GitOps</h3><span class="badge badge--green">Ready</span></header>
+            <ul class="tags">
+              <li>GitHub Actions</li><li>Jenkins</li><li>GitLab CI/CD</li><li>AWS CodePipeline</li>
+            </ul>
+          </article>
+
+          <article class="skill-card reveal">
+            <header class="skill-card__head"><h3>SRE &amp; Monitoring</h3><span class="badge badge--cyan">Live</span></header>
+            <ul class="tags">
+              <li>Grafana</li><li>Prometheus</li><li>Loki</li><li>CloudWatch</li><li>OpenTelemetry</li>
+            </ul>
+          </article>
+
+          <article class="skill-card reveal">
+            <header class="skill-card__head"><h3>SRE Practices</h3><span class="badge badge--cyan">Live</span></header>
+            <ul class="tags">
+              <li>SLI/SLO definition</li><li>Incident response P1–P3</li><li>RCA</li><li>Post-incident reviews</li><li>Capacity planning</li>
+            </ul>
+          </article>
+
+          <article class="skill-card reveal">
+            <header class="skill-card__head"><h3>Programming &amp; Scripting</h3><span class="badge badge--green">Ready</span></header>
+            <ul class="tags">
+              <li>Node.js</li><li>JavaScript</li><li>TypeScript</li><li>Java</li><li>Bash</li><li>PowerShell</li><li>Groovy</li>
+            </ul>
+          </article>
+
+          <article class="skill-card reveal">
+            <header class="skill-card__head"><h3>Networking &amp; Security</h3><span class="badge badge--amber">Secure</span></header>
+            <ul class="tags">
+              <li>DNS</li><li>VPC</li><li>Firewalls</li><li>Load Balancers</li><li>IAM</li><li>HashiCorp Vault</li><li>AWS KMS</li>
+            </ul>
+          </article>
+
+          <article class="skill-card reveal">
+            <header class="skill-card__head"><h3>Messaging &amp; Database</h3><span class="badge badge--green">Ready</span></header>
+            <ul class="tags">
+              <li>Kafka</li><li>PostgreSQL</li><li>MongoDB</li>
+            </ul>
+          </article>
+
+          <article class="skill-card reveal">
+            <header class="skill-card__head"><h3>Project Tools</h3><span class="badge badge--green">Ready</span></header>
+            <ul class="tags">
+              <li>Jira</li><li>ServiceNow</li><li>Git</li><li>GitHub</li><li>Bitbucket</li><li>Maven</li><li>Gradle</li>
+            </ul>
+          </article>
+
+          <article class="skill-card reveal">
+            <header class="skill-card__head"><h3>AI-Assisted Engineering</h3><span class="badge badge--cyan">Live</span></header>
+            <ul class="tags">
+              <li>GitHub Copilot</li><li>Claude</li><li>OpenCode</li><li>Helix</li><li>Agentic AI Workflows</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== EXPERIENCE ===================== -->
+    <section class="section" id="experience" aria-labelledby="experience-title">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__index">03</span>
+          <h2 class="section__title" id="experience-title">$ ./deploy --history</h2>
+        </div>
+        <p class="section__sub reveal">Career pipeline — each stage is a deployment to a new role.</p>
+
+        <ol class="pipeline">
+          <li class="pipeline__stage reveal">
+            <div class="pipeline__node" aria-hidden="true"><span class="pipeline__pulse"></span></div>
+            <article class="role">
+              <header class="role__head">
+                <h3 class="role__company">Accenture India Pvt Ltd</h3>
+                <span class="role__period badge badge--green">Apr 2024 — Present</span>
+              </header>
+              <p class="role__title">Packaged App Development Specialist — Cloud DevSecOps &amp; Platform Engineer</p>
+              <p class="role__loc">Bangalore, India</p>
+              <ul class="role__points">
+                <li>Designed reusable Terraform/OpenTofu modules; automated multi-account AWS deployments via GitLab CI/CD for standardized, scalable provisioning.</li>
+                <li>Built end-to-end CI/CD pipelines integrating GitLab, Jenkins, GitHub Actions, SonarQube quality gates, SAST, IaC security scanning, and secret detection.</li>
+                <li>Established observability with OpenTelemetry, CloudWatch, Grafana, Prometheus, and Loki; cross-account IAM, dashboards, and alerts into Microsoft Teams.</li>
+                <li>Ran cloud-native apps on ECS Fargate, Lambda, S3, and CloudFront.</li>
+                <li>Used AI-assisted tooling (Copilot, Claude, OpenCode, Helix) to speed up reviews, bug resolution, and code quality.</li>
+                <li>Led P1–P3 incident response, RCA, alert monitoring, and secrets rotation.</li>
+                <li>Acted as platform SME: mentoring, platform improvements, and cross-functional work.</li>
+              </ul>
+            </article>
+          </li>
+
+          <li class="pipeline__stage reveal">
+            <div class="pipeline__node" aria-hidden="true"></div>
+            <article class="role">
+              <header class="role__head">
+                <h3 class="role__company">Infosys Ltd</h3>
+                <span class="role__period badge">Apr 2022 — Apr 2024</span>
+              </header>
+              <p class="role__title">Senior Associate Consultant — DevOps &amp; Platform Engineer</p>
+              <p class="role__loc">Bangalore, India · Hybrid</p>
+              <ul class="role__points">
+                <li>Built CI/CD pipelines with Jenkins + Groovy across multiple application environments.</li>
+                <li>Integrated Jenkins with Git, Docker, and Nexus for artifact management.</li>
+                <li>Deployed apps on AWS across Windows and Linux with high availability.</li>
+                <li>Built deployment frameworks for .NET, Java, and Node.js.</li>
+                <li>Provisioned infrastructure with Terraform and IaC practices.</li>
+                <li>Built Grafana/CloudWatch dashboards and alerts; performed RCA on failures.</li>
+                <li>Wrote runbooks and architectural documentation.</li>
+              </ul>
+            </article>
+          </li>
+
+          <li class="pipeline__stage reveal">
+            <div class="pipeline__node" aria-hidden="true"></div>
+            <article class="role">
+              <header class="role__head">
+                <h3 class="role__company">Capgemini India Pvt Ltd</h3>
+                <span class="role__period badge">Sep 2021 — Apr 2022</span>
+              </header>
+              <p class="role__title">Senior Software Engineer — Cloud Operations &amp; Monitoring</p>
+              <p class="role__loc">Bangalore, India</p>
+              <ul class="role__points">
+                <li>Built and maintained Grafana dashboards and alerting for applications, infrastructure, and KPIs.</li>
+                <li>Managed AWS (EC2, IAM, VPC, CloudWatch, Load Balancers).</li>
+                <li>Monitored production, investigated alerts, and performed RCA.</li>
+                <li>Supported deployments and releases with dev/infra teams.</li>
+              </ul>
+            </article>
+          </li>
+
+          <li class="pipeline__stage reveal">
+            <div class="pipeline__node" aria-hidden="true"></div>
+            <article class="role">
+              <header class="role__head">
+                <h3 class="role__company">Ascent HR Solutions Pvt Ltd</h3>
+                <span class="role__period badge">Jan 2020 — Sep 2021</span>
+              </header>
+              <p class="role__title">Cloud Support Engineer — Linux &amp; Cloud Engineer</p>
+              <p class="role__loc">Bangalore, India</p>
+              <ul class="role__points">
+                <li>Supported AWS (EC2, S3, VPC, IAM, Route 53, CloudWatch).</li>
+                <li>Provided L1/L2 support; troubleshot infrastructure and application incidents.</li>
+                <li>Assisted deployments via Jenkins; automated routine releases.</li>
+                <li>Performed RCA and corrective actions across teams.</li>
+              </ul>
+            </article>
+          </li>
+        </ol>
+
+        <!-- Education -->
+        <div class="education reveal">
+          <h3 class="education__title">$ cat education.txt</h3>
+          <div class="education__card">
+            <p class="education__degree">B.Tech — Electronics &amp; Communication Engineering</p>
+            <p class="education__school">Sree Vidyanikethan Engineering College, Tirupati, India</p>
+            <p class="education__meta">Aug 2015 — Apr 2019 · GPA 7.64 / 10</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CERTIFICATIONS ===================== -->
+    <section class="section section--alt" id="certifications" aria-labelledby="certs-title">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__index">04</span>
+          <h2 class="section__title" id="certs-title">$ ls ./certifications</h2>
+        </div>
+
+        <div class="certs-grid">
+          <article class="cert reveal">
+            <div class="cert__badge" aria-hidden="true">AWS</div>
+            <div class="cert__body">
+              <h3 class="cert__name">AWS Certified Solutions Architect</h3>
+              <p class="cert__level">Associate</p>
+            </div>
+            <span class="cert__check badge badge--green">verified</span>
+          </article>
+
+          <article class="cert reveal">
+            <div class="cert__badge cert__badge--terraform" aria-hidden="true">HCP</div>
+            <div class="cert__body">
+              <h3 class="cert__name">HashiCorp Certified: Terraform</h3>
+              <p class="cert__level">Associate</p>
+            </div>
+            <span class="cert__check badge badge--green">verified</span>
+          </article>
+
+          <article class="cert reveal">
+            <div class="cert__badge cert__badge--github" aria-hidden="true">GH</div>
+            <div class="cert__body">
+              <h3 class="cert__name">GitHub Actions</h3>
+              <p class="cert__level">Certification</p>
+            </div>
+            <span class="cert__check badge badge--green">verified</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PROJECTS ===================== -->
+    <section class="section" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__index">05</span>
+          <h2 class="section__title" id="projects-title">$ git log --projects</h2>
+        </div>
+        <p class="section__sub reveal">Selected work. <em>Placeholders below — ready for you to fill in.</em></p>
+
+        <!--
+          ============================================================
+          TODO: PROJECTS — replace the placeholder cards below.
+          For each project, fill in:
+            - data-title  : project name (also update the <h3>)
+            - stack tags  : <li> items inside <ul class="tags">
+            - blurb       : the <p class="project__blurb"> text
+            - repo link   : href on the "repo" link (or remove)
+            - live link   : href on the "live" link (or remove)
+          Duplicate a <article class="project"> block to add more.
+          ============================================================
+        -->
+        <div class="projects-grid">
+          <!-- TODO: Project 1 -->
+          <article class="project reveal" data-title="project-01">
+            <header class="project__head">
+              <span class="project__icon" aria-hidden="true">&lt;/&gt;</span>
+              <h3 class="project__name">Project Title One</h3>
+            </header>
+            <p class="project__blurb">Short blurb describing the problem, your approach, and the impact. Replace this text with a real project summary (1–2 sentences).</p>
+            <ul class="tags">
+              <li>Terraform</li><li>AWS</li><li>GitLab CI</li>
+            </ul>
+            <footer class="project__links">
+              <!-- TODO: set real URLs, or remove a link if not applicable -->
+              <a href="#" rel="noopener" aria-label="Project One repository">repo ↗</a>
+              <a href="#" rel="noopener" aria-label="Project One live demo">live ↗</a>
+            </footer>
+          </article>
+
+          <!-- TODO: Project 2 -->
+          <article class="project reveal" data-title="project-02">
+            <header class="project__head">
+              <span class="project__icon" aria-hidden="true">&lt;/&gt;</span>
+              <h3 class="project__name">Project Title Two</h3>
+            </header>
+            <p class="project__blurb">Short blurb describing the problem, your approach, and the impact. Replace this text with a real project summary (1–2 sentences).</p>
+            <ul class="tags">
+              <li>Kubernetes</li><li>Prometheus</li><li>Grafana</li>
+            </ul>
+            <footer class="project__links">
+              <a href="#" rel="noopener" aria-label="Project Two repository">repo ↗</a>
+              <a href="#" rel="noopener" aria-label="Project Two live demo">live ↗</a>
+            </footer>
+          </article>
+
+          <!-- TODO: Project 3 -->
+          <article class="project reveal" data-title="project-03">
+            <header class="project__head">
+              <span class="project__icon" aria-hidden="true">&lt;/&gt;</span>
+              <h3 class="project__name">Project Title Three</h3>
+            </header>
+            <p class="project__blurb">Short blurb describing the problem, your approach, and the impact. Replace this text with a real project summary (1–2 sentences).</p>
+            <ul class="tags">
+              <li>GitHub Actions</li><li>Docker</li><li>OpenTelemetry</li>
+            </ul>
+            <footer class="project__links">
+              <a href="#" rel="noopener" aria-label="Project Three repository">repo ↗</a>
+              <a href="#" rel="noopener" aria-label="Project Three live demo">live ↗</a>
+            </footer>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section class="section section--alt" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__index">06</span>
+          <h2 class="section__title" id="contact-title">$ ./contact.sh</h2>
+        </div>
+        <p class="section__sub reveal">Let's talk platforms, pipelines, and reliability. I usually reply within a day.</p>
+
+        <div class="contact-grid">
+          <a class="contact-card reveal" href="mailto:jagapathi.allam.tech@gmail.com">
+            <span class="contact-card__key">email</span>
+            <span class="contact-card__val">jagapathi.allam.tech@gmail.com</span>
+          </a>
+          <a class="contact-card reveal" href="tel:+919966386694">
+            <span class="contact-card__key">phone</span>
+            <span class="contact-card__val">+91-9966386694</span>
+          </a>
+          <a class="contact-card reveal" href="https://www.linkedin.com/in/jagapathi-babu-allam" target="_blank" rel="noopener">
+            <span class="contact-card__key">linkedin</span>
+            <span class="contact-card__val">in/jagapathi-babu-allam ↗</span>
+          </a>
+          <a class="contact-card reveal" href="https://github.com/" target="_blank" rel="noopener">
+            <!-- TODO: replace with your GitHub profile URL -->
+            <span class="contact-card__key">github</span>
+            <span class="contact-card__val">github profile ↗</span>
+          </a>
+        </div>
+
+        <div class="contact__cta reveal">
+          <a class="btn btn--primary" href="mailto:jagapathi.allam.tech@gmail.com?subject=Opportunity%20for%20Jagapathi">Send an email</a>
+          <a class="btn btn--ghost" href="assets/resume.pdf" download>Download Résumé</a>
+        </div>
+
+        <!--
+          ============================================================
+          OPTIONAL: Netlify Forms (no backend needed).
+          To enable a contact form on Netlify, uncomment this block.
+          Netlify auto-detects the form at build time via data-netlify.
+          ============================================================
+        <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="contact-form">
+          <input type="hidden" name="form-name" value="contact" />
+          <p class="contact-form__hp" hidden><label>Don't fill this out: <input name="bot-field" /></label></p>
+          <label>Name <input type="text" name="name" required /></label>
+          <label>Email <input type="email" name="email" required /></label>
+          <label>Message <textarea name="message" rows="4" required></textarea></label>
+          <button type="submit" class="btn btn--primary">Send</button>
+        </form>
+        -->
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER (vim/tmux status bar) ===================== -->
+  <footer class="statusbar" role="contentinfo">
+    <div class="statusbar__inner">
+      <span class="statusbar__mode">NORMAL</span>
+      <span class="statusbar__branch">⎇ main</span>
+      <span class="statusbar__text">jagapathi-portfolio.md</span>
+      <span class="statusbar__spacer"></span>
+      <span class="statusbar__pos">utf-8</span>
+      <span class="statusbar__pos">© <span id="year"></span> Jagapathi Babu Allam</span>
+      <a class="statusbar__top" href="#top">▲ top</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
